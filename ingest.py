@@ -35,5 +35,5 @@ index.add(embeddings)
 
 faiss.write_index(index, INDEX_PATH)
 with open(EMBED_PATH, "wb") as f:
-    pickle.dump([d.metadata for d in docs], f)
+    pickle.dump(docs, f)
 print("[Ingest] 索引构建完成，总文档块:", len(docs))

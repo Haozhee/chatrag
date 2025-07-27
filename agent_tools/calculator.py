@@ -7,3 +7,4 @@ def calculator(expr: str) -> str:
         return str(eval(expr, {"__builtins__": {}}))
     except Exception as e:
         return f"计算错误: {e}"
+    
